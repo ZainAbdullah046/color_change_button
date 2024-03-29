@@ -13,8 +13,16 @@ class _MyWidgetState extends State<colorchange> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("COLOR CHANGE BUTTON APP"),
-        backgroundColor: Colors.blueAccent,
+        title: const Center(
+          child: Text(
+            "COLOR CHANGE BUTTON APP",
+            style: TextStyle(
+                color: Colors.white70,
+                fontWeight: FontWeight.bold,
+                fontSize: 20),
+          ),
+        ),
+        backgroundColor: Colors.black87,
         shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(20))),
       ),
@@ -30,8 +38,11 @@ class _MyWidgetState extends State<colorchange> {
                   MaterialStatePropertyAll(ispress ? Colors.blue : Colors.red)),
           child: const Text(
             "PRESS HERE",
-            style:
-                TextStyle(color: Colors.black54, fontWeight: FontWeight.bold),
+            style: TextStyle(
+              color: Colors.black87,
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
           ),
         ),
       ),
